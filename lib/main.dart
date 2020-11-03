@@ -12,25 +12,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Welcome to Flutter',
       home: Scaffold(
+        backgroundColor:Colors.blueGrey,
         appBar: AppBar(
-          title: Text('Welcome to Flutter'),
+          title: Text('I Am A Rich'),
+          backgroundColor:Colors.blueGrey[900],
         ),
         body:
-        Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children:<Widget>[
-              Container(
-                margin: EdgeInsets.all(12.0),
-                padding: EdgeInsets.all(8.0),
-                decoration:BoxDecoration(
-                    borderRadius:BorderRadius.circular(8),
-                    color:Colors.green
-                ),
-                child: Text("Flutter",style: TextStyle(color:Colors.yellowAccent,fontSize:25),),
-              ),
+          Center(
+            child:  Image(
+              image:AssetImage('assets/images/test.png')
+            ),
+          )
 
-            ]
-        )
         ),
       );
 
